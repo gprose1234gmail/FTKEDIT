@@ -296,6 +296,11 @@ audio_markup2 = InlineKeyboardMarkup(
             InlineKeyboardButton(text="⏭️", callback_data=f"skipcb"),
             InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
         ],
-        [InlineKeyboardButton("🗑 Close Menu", callback_data="close")],
+                [
+            InlineKeyboardButton(
+                text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
+            ),
+            InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close")],
+        
     ]
 )
