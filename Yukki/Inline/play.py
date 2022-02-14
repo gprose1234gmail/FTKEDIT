@@ -287,8 +287,7 @@ def audio_timer_markup_start(videoid, user_id, current_time):
     ]
     return buttons
 
-
-audio_markup2 = InlineKeyboardMarkup
+audio_markup2 = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(text="▶️", callback_data=f"resumecb"),
@@ -296,8 +295,6 @@ audio_markup2 = InlineKeyboardMarkup
             InlineKeyboardButton(text="⏭️", callback_data=f"skipcb"),
             InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
         ],
-           
-            [InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close")],
-        
+        [InlineKeyboardButton("🗑 Close Menu", callback_data="close")],
     ]
 )
