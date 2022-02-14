@@ -269,11 +269,11 @@ def audio_markup(videoid, user_id, current_time, total_time):
     return buttons
 
 
-def audio_timer_markup_start(videoid, user_id, current_time, total_time):
+def audio_timer_markup_start(videoid, user_id, current_time):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{total_time} ------------------ {current_time}",
+                text=f"{current_time}",
                 callback_data=f"timer_checkup_markup {videoid}|{user_id}",
             )
         ],
