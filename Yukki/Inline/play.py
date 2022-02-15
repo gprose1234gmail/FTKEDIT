@@ -215,6 +215,10 @@ def primary_markup(videoid, user_id, current_time, total_time):
             InlineKeyboardButton(
                 text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
             ),
+          InlineKeyboardButton(
+                text="✚",
+                callback_data=f"your_playlist {videoid}|{user_id}",
+            ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
     ]
@@ -236,6 +240,10 @@ def timer_markup(videoid, user_id, current_time, total_time):
         [
             InlineKeyboardButton(
                 text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
+            ),
+          InlineKeyboardButton(
+                text="✚",
+                callback_data=f"your_playlist {videoid}|{user_id}",
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
@@ -268,7 +276,7 @@ def audio_markup(videoid, user_id, current_time, total_time):
 def audio_timer_markup_start(videoid, user_id, current_time, total_time):
     buttons = [
         [
-            InlineKeyboardButton(text=f"{current_time} {total_time}",callback_data=f"timer_checkup_markup {videoid}|{user_id}",
+            InlineKeyboardButton(text=f"{current_time}...VIBZZ...{total_time}",callback_data=f"timer_checkup_markup {videoid}|{user_id}",
             )
         ],
         [ 
@@ -280,6 +288,10 @@ def audio_timer_markup_start(videoid, user_id, current_time, total_time):
         [
             InlineKeyboardButton(
                 text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
+            ),
+          InlineKeyboardButton(
+                text="✚",
+                callback_data=f"your_playlist {videoid}|{user_id}",
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
