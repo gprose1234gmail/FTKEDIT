@@ -219,10 +219,9 @@ def primary_markup(videoid, user_id, current_time, total_time):
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
            [InlineKeyboardButton(text="✚",callback_data=f"your_playlist {videoid}|{user_id}",
-            )
-           
-           InlineKeyboardButton(text="🔎",callback_data=f"lyrics {videoid}|{user_id}",
-            )
+            ),
+            InlineKeyboardButton(text="🔎",callback_data=f"lyrics {videoid}|{user_id}",
+            ),
            ],
     ]
     return buttons
@@ -249,10 +248,9 @@ def timer_markup(videoid, user_id, current_time, total_time):
         ],
           
            [InlineKeyboardButton(text="✚",callback_data=f"your_playlist {videoid}|{user_id}",
-            )
-           
+            ),
            InlineKeyboardButton(text="🔍",callback_data=f"lyrics {videoid}|{user_id}",
-            )
+            ),
            ],
     ]
     return buttons
@@ -301,10 +299,9 @@ def audio_timer_markup_start(videoid, user_id, current_time, total_time):
         ],
       
            [InlineKeyboardButton(text="✚",callback_data=f"your_playlist {videoid}|{user_id}",
-            )
-           
+            ),
             InlineKeyboardButton(text="🔎",callback_data=f"lyrics {videoid}|{user_id}",
-            )
+            ),
            ],
     ]
     return buttons
