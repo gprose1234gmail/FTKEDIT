@@ -27,7 +27,7 @@ def url_markup(videoid, duration, user_id, query, query_type):
       
            [InlineKeyboardButton(
                 text=f"Others",
-                callback_data=f"play_playlist {user_id}|{type}|Others",
+                callback_data=f"play_playlist {user_id}|Personal|Others",
             ),
            ],
         [
